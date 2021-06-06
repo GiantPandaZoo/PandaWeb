@@ -1,0 +1,69 @@
+.footer_container {
+    height: auto !important;
+    padding: 20px 0;
+    color: #aaa;
+
+    .section.f_section {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .section_container.footer_item_container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .f_i_c_l,
+        .f_i_c_m,
+        .f_i_c_r {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .logo_link {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 0 20px;
+            color: #fff;
+        }
+
+        .f_copyright {
+            font-size: 13px;
+            color: #fff;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+
+        .f_i_c_r,
+        .f_i_c_m{
+            a.f_link{
+                color: #4e5f7f;
+                text-decoration: none;
+                margin-left: 20px;
+
+                .iconfont{
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .f_i_c_l,
+        .f_i_c_m{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .f_i_c_m{
+            align-items: center;
+
+            .slow_mist{
+                display: block;
+                width: 149px;
+                height: 108px;
+                background-image: url("./img/bg_slowmist.png");
+                background-size: 100%;
+            }
+        }
+    }
+}

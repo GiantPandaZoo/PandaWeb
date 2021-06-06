@@ -1,0 +1,281 @@
+.trading_container {
+    margin: 20px 0;
+
+    .next-table{
+        width: 100%;
+    }
+
+    .next-loading-fusion-reactor .next-loading-dot{
+        background: #50DDBB 100%;
+    }
+
+    th,
+    td{
+        border: 0;
+        border-bottom: 1px solid rgba(220, 221, 231, 1);
+    }
+
+    th{
+        color: rgba(78, 95, 127, 100);
+        font-size: 14px;
+        background-color: rgba(250, 250, 250, 1);
+        padding: 12px 10px;
+
+        .next-table-cell-wrapper{
+            padding: 0;
+            word-wrap:break-word;
+            word-break: break-word;
+        }
+    }
+
+    td{
+        color: rgba(78, 95, 127, 100);
+        font-size: 14px;
+
+        .next-table-cell-wrapper{
+            padding: 12px 10px;
+        }
+    }
+
+    tbody tr:hover{
+        background-color: rgba(240, 241, 250, 1);
+    }
+
+    .coin_switch {
+        width: 100%;
+
+        .next-tabs-nav{
+            .icon_btc,
+            .icon_eth,
+            .icon_bnb{background-repeat: no-repeat; background-position: 10px 12px;}
+
+            .icon_btc{background-image: url("./img/icon_wbtc_unselect.png")}
+            .icon_eth{background-image: url("./img/icon_eth_unselect.png")}
+            .icon_bnb{background-image: url("./img/icon_bnb_unselect.png")}
+
+            .active.icon_btc{background-image: url("./img/icon_wbtc_select.png")}
+            .active.icon_eth{background-image: url("./img/icon_eth_select.png")}
+            .active.icon_bnb{background-image: url("./img/icon_bnb_select.png")}
+        }
+
+        .next-tabs-tab-inner {
+            width: 180px;
+            text-align: center;
+            padding: 12px 10px 12px 40px;
+        }
+    }
+
+    .coin_icon{
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+    }
+
+    .coin_icon_btc{
+        background-image: url('./img/icon_wbtc_select.png');
+    }
+
+    .coin_icon_eth{
+        background-image: url('./img/icon_eth_select.png');
+    }
+
+    .coin_icon_bnb{
+        background-image: url('./img/icon_bnb_select.png');
+    }
+
+
+    .option_form {
+        margin-top: 20px;
+
+        .section_item {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .f_title {
+                height: 30px;
+                line-height: 30px;
+                font-size: 16px;
+                display: block;
+            }
+
+            .f_tips {
+                margin-top: 10px;
+            }
+
+            .f_input_box {
+                width: 100%;
+                flex-direction: row;
+                display: flex;
+            }
+
+            .f_input {
+                width: 180px;
+
+                .next-input,
+                input {
+                    height: 40px;
+                }
+
+                .next-after {
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        .option_type_switch {
+            display: block;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid rgba(187, 187, 187, 100);
+            background-color: rgba(255, 255, 255, 100);
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .option_type_switch.selected {
+            background-color: rgba(0, 0, 0, 1);
+            color: rgba(255, 255, 255, 100);
+        }
+
+        .f_submit_box {
+            height: 100px;
+            align-items: center;
+
+            .sub_btn_box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .buy_tips {
+                    line-height: 25px;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    .bolder{
+                        color: rgba(78, 95, 127, 100);
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+
+    .option_profit {
+        margin-top: 20px;
+
+        .section_item {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .section_title{
+            border-left: 5px solid rgba(80, 221, 187, 1);
+            padding-left: 8px;
+        }
+
+        .section_item.section_profit_box{
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profit_table_box{
+            margin-bottom: 40px;
+        }
+
+        .profit_box_title{
+            margin-top: 15px;
+            margin-bottom: 25px;
+            color: #555b75;
+            font-size: 22px;
+            line-height: 28px;
+        }
+
+        .asset{
+            width: 120px;
+
+            .asset_box{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .asset_name{
+                margin-left: -10px;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+        .profit_cell{
+            width: 240px;
+
+            .value{
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .unit{
+                margin-left: 5px;
+                font-size: 14px;
+            }
+        }
+        .claim_cell{
+            width: 200px;
+
+            .sub_btn.next-btn.next-btn-primary.sub_btn_short {
+                width: 160px !important;
+                height: 45px;
+                margin: 0 0;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .option_profit_chart{
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        .toolTips{
+            padding: 15px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .section_my_option_box{
+        margin-bottom: 40px;
+
+
+
+        .asset{
+            width: 65px;
+        }
+        .type{
+            width: 65px;
+        }
+        .duration{
+            width: 85px;
+        }
+        .position{
+            width: 120px;
+        }
+        .premium{
+            width: 120px;
+        }
+        .revenue{
+            color: rgba(42, 216, 174, 100);
+        }
+        .expiryDate{
+            width: 180px;
+        }
+        .countdown{
+            color: rgba(255, 172, 0, 100);
+        }
+    }
+}

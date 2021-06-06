@@ -1,0 +1,28 @@
+.opa_stake_pop_windows{
+    .asset_value,
+    .asset_unit{
+        margin-left: 5px;
+        color: rgba(255, 172, 0, 100);
+        font-size: 20px;
+    }
+
+    .sub_btn_box.sub_box_pl{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    .pl_btn{
+        display: block;
+        width: 400px;
+        height: 50px;
+        color: rgba(255, 255, 255, 100);
+        font-weight: bolder;
+        font-size: 18px;
+        line-height: 50px;
+        background-color: rgba(80, 221, 187, 1);
+        border-radius: 25px;
+    }
+}

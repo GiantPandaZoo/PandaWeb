@@ -1,0 +1,103 @@
+.opa_lp_container {
+    margin-bottom: 50px !important;
+
+    .dao_staking_box{
+        width: 100%;
+        height: auto;
+    }
+
+    .staking_header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 80px;
+        padding: 15px 0;
+        color: rgba(80, 221, 187, 100);
+        font-size: 24px;
+        border-bottom: 2px solid rgba(220, 221, 231, 1);
+
+        .coin_icon_group{
+            margin-bottom: 15px;
+        }
+    }
+
+    .staking_item{
+        padding: 0 20px;
+        border: 1px solid rgba(220, 221, 231, 1);
+
+        .total_box{
+            margin-top: 30px;
+            margin-bottom: 45px;
+            text-align: center;
+        }
+
+        .total{
+            color: #555B75;
+            font-size: 26px;
+        }
+
+        .total_value_box{
+            color: #555B75;
+            font-weight: bolder;
+            margin: 5px 0;
+        }
+
+        .total_value{
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .value{
+            font-weight: bolder;
+            font-size: 32px;
+        }
+
+        .unit{
+            font-size: 14px;
+            margin-left: 15px;
+            font-weight: bolder;
+        }
+
+        .stake_info_box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .stake_value{
+            font-weight: bolder;
+            font-size: 20px;
+
+            .unit{
+                margin-left: 0;
+            }
+        }
+
+        .sub_btn_box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            .sub_btn.next-btn.next-btn-primary {
+                width: 350px;
+                height: 50px;
+                margin-bottom: 20px !important;
+                font-size: 18px;
+                background-image: none !important;
+            }
+
+            .sub_btn.next-btn.next-btn-primary.sub_btn_short {
+                width: 350px;
+                height: 50px;
+                margin-bottom: 20px !important;
+                font-size: 18px;
+            }
+        }
+    }
+}

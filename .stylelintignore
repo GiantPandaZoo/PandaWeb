@@ -1,0 +1,19 @@
+#
+node_modules/
+public/
+build/
+dist/
+tests/
+demo/
+doc/
+style/
+
+# node
+coverage/
+
+#
+*.min.css
+*-min.css
+*.js
+*.jpg
+*.woff

@@ -1,0 +1,85 @@
+.coin_icon{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+}
+
+.coin_icon_btc,
+.coin_icon_btc_hover{
+    background-image: url('./img/icon_wbtc_unselect.png');
+}
+
+.coin_icon_btc_hover:hover,
+.coin_icon_btc.active,
+.coin_icon_btc_hover.active{
+    background-image: url('./img/icon_wbtc_select.png');
+}
+
+.coin_icon_eth,
+.coin_icon_eth_hover{
+    background-image: url('./img/icon_eth_unselect.png');
+}
+
+.coin_icon_eth_hover:hover,
+.coin_icon_eth.active,
+.coin_icon_eth_hover.active {
+    background-image: url('./img/icon_eth_select.png');
+}
+
+.coin_icon_bnb,
+.coin_icon_bnb_hover{
+    background-image: url('./img/icon_bnb_unselect.png');
+}
+
+.coin_icon_bnb_hover:hover,
+.coin_icon_bnb.active,
+.coin_icon_bnb_hover.active {
+    background-image: url('./img/icon_bnb_select.png');
+}
+
+.coin_icon_usdt,
+.coin_icon_usdt_hover{
+    background-image: url('./img/icon_usdt_unselect.png');
+}
+
+.coin_icon_usdt_hover:hover,
+.coin_icon_usdt.active,
+.coin_icon_usdt_hover.active{
+    background-image: url('./img/icon_usdt_select.png');
+}
+
+.coin_icon_opa,
+.coin_icon_opa_hover{
+    background-image: url('./img/icon_opa_unselect.png');
+}
+
+.coin_icon_opa_hover:hover,
+.coin_icon_opa.active,
+.coin_icon_opa_hover.active{
+    background-image: url('./img/icon_opa_select.png');
+}
+
+.coin_icon_group{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    margin-right: 20px;
+
+    .coin_icon{
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        margin-right: 0;
+    }
+
+    .coin_icon:nth-child(1){
+        left: 0;
+        z-index: 1;
+    }
+
+    .coin_icon:nth-child(2){
+        left: 32px;
+    }
+}

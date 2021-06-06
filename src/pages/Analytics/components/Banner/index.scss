@@ -1,0 +1,33 @@
+.panda .b_container,
+.a_b_container {
+    background-image: url("./img/banner_bg.png");
+
+    .l {
+        padding: 10px;
+
+        .title {
+            font-size: 38px !important;
+            line-height: 60px;
+            font-weight: bolder;
+        }
+
+        .content {
+            font-size: 18px;
+            line-height: 35px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            margin: 10px 0;
+        }
+    }
+
+    .r {
+        .content {
+            width: 437px;
+            height: 456px;
+            background-size: cover;
+            background-image: url("img/banner.png");
+        }
+    }
+}

@@ -1,0 +1,334 @@
+.pooler_container {
+    margin: 20px 0;
+
+    .next-table{
+        width: 100%;
+    }
+
+    .next-loading-fusion-reactor .next-loading-dot{
+        background: #50DDBB 100%;
+    }
+
+    th,
+    td{
+        border: 0;
+        border-bottom: 1px solid rgba(220, 221, 231, 1);
+    }
+
+    th{
+        color: rgba(78, 95, 127, 100);
+        font-size: 14px;
+        background-color: rgba(250, 250, 250, 1);
+        padding: 12px 10px;
+
+        .next-table-cell-wrapper{
+            padding: 0;
+            word-wrap:break-word;
+            word-break: break-word;
+        }
+    }
+
+    td{
+        color: rgba(78, 95, 127, 100);
+        font-size: 14px;
+
+        .next-table-cell-wrapper{
+            padding: 12px 10px;
+        }
+    }
+
+    tbody tr:hover{
+        background-color: rgba(240, 241, 250, 1);
+    }
+
+    .coin_switch {
+        width: 100%;
+
+        .coin_tab_item{
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+            color: rgba(146, 149, 166, 100);
+
+            .tab_desc{
+                width: 300px;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                margin-left: 82px;
+                padding-right: 20px;
+                font-size: 14px;
+                white-space: normal;
+            }
+
+            .icon_btc,
+            .icon_eth,
+            .icon_bnb {
+                height: 42px;
+                line-height: 42px;
+                font-size: 22px;
+                padding-left: 82px;
+                background-repeat: no-repeat;
+                background-position: 20px 0;
+            }
+
+            .icon_btc {
+                background-image: url("./img/icon_wbtc_unselect.png")
+            }
+            .icon_eth {
+                background-image: url("./img/icon_eth_unselect.png")
+            }
+            .icon_bnb {
+                background-image: url("./img/icon_bnb_unselect.png")
+            }
+
+            .active .icon_btc {
+                background-image: url("./img/icon_wbtc_select.png")
+            }
+            .active .icon_eth {
+                background-image: url("./img/icon_eth_select.png")
+            }
+            .active .icon_bnb {
+                background-image: url("./img/icon_bnb_select.png")
+            }
+        }
+
+        .active .coin_tab_item{
+            .icon_btc,
+            .icon_eth,
+            .icon_bnb {
+                color: rgba(0, 216, 178, 100);
+                font-weight: bolder;
+            }
+
+            .icon_btc {
+                background-image: url("./img/icon_wbtc_select.png")
+            }
+            .icon_eth {
+                background-image: url("./img/icon_eth_select.png")
+            }
+            .icon_bnb {
+                background-image: url("./img/icon_bnb_select.png")
+            }
+        }
+    }
+
+    .coin_icon{
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+    }
+
+    .coin_icon_btc{
+        background-image: url('./img/icon_wbtc_select.png');
+    }
+
+    .coin_icon_eth{
+        background-image: url('./img/icon_eth_select.png');
+    }
+
+    .coin_icon_bnb{
+        background-image: url('./img/icon_bnb_select.png');
+    }
+
+    .pooler_form{
+        margin-top: 40px;
+
+        .section_item{
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .f_submit_box{
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .f_title{
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .f_input_box{
+            width: 100%;
+        }
+
+        .section_item .f_tips {
+            margin-top: 10px;
+            font-size: 16px;
+            white-space:nowrap;
+
+            .bolder {
+                color: #ffac00;
+                font-size: 20px;
+            }
+        }
+
+        .next-radio-button-large > label{
+            width: 265px;
+            height: 52px;
+        }
+
+        .next-radio-button-large > label .next-radio-label {
+            font-size: 18px;
+        }
+
+        .next-radio-button > label .next-radio-label,
+        .next-radio-button > label.checked .next-radio-label{
+            font-size: 18px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .f_input .next-input,
+        .f_input input {
+            height: 50px;
+            font-weight: bolder;
+            font-size: 18px;
+            color: #50ddbb;
+        }
+
+        .section_item .next-input {
+            font-weight: bolder;
+            background-color: rgba(0, 216, 178, 0);
+            border: 1px solid #50ddbb;
+            border-radius: 0;
+        }
+
+        .section_item .f_input_long {
+            width: 100%;
+        }
+
+        .section_item .next-input.next-disabled {
+            background-color: rgba(179, 193, 200, 0.2);
+            border: 1px solid #d0dadf;
+            color: #555b75;
+        }
+        .section_item .f_input .next-after {
+            padding-right: 10px;
+        }
+
+        .section_item .next-input.next-disabled input,
+        .section_item .next-input.next-disabled .next-input-inner{
+            color: #555b75;
+            font-weight: bolder;
+        }
+
+        .f_submit_box{
+            .sub_btn_box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .deposit_tips {
+                    width: 946px;
+                    line-height: 25px;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    .bolder {
+                        color: #4e5f7f;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+
+    .pooler_income{
+        margin-top: 40px;
+
+        .section_item{
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .section_title{
+            border-left: 5px solid rgba(80, 221, 187, 1);
+            padding-left: 8px;
+        }
+
+        .next-radio-button > label.checked .next-radio-label {
+            font-size: 18px;
+        }
+
+        .next-radio-button-large > label {
+            width: 135px;
+            height: 52px;
+
+            .next-radio-label {
+                font-size: 18px;
+                line-height: 50px;
+                text-align: center;
+            }
+        }
+    }
+
+    .section_investment_box{
+        .investment_box_title{
+            margin-top: 15px;
+            margin-bottom: 25px;
+            color: #555b75;
+            font-size: 22px;
+            line-height: 28px;
+        }
+
+        .asset{
+            width: 140px;
+
+            .asset_box{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .asset_name{
+                margin-left: -10px;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+
+        .amount,
+        .percentage_amount{
+            width: 160px;
+
+            .value{
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .unit{
+                margin-left: 5px;
+                font-size: 14px;
+            }
+        }
+
+        .percentage_amount{
+            width: 140px;
+        }
+
+        .operation_cell{
+            width: 300px;
+
+            .btn_box{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .sub_btn.next-btn.next-btn-primary.sub_btn_short {
+                width: auto !important;
+                height: 45px;
+                margin: 0;
+                padding: 0 25px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .pooler_income{
+        margin-bottom: 60px;
+    }
+}

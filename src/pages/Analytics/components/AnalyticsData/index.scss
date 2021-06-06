@@ -1,0 +1,220 @@
+.analytics_container {
+    margin: 20px 0;
+
+    .coin_switch {
+        width: 100%;
+
+        .next-tabs-nav{
+            .icon_btc,
+            .icon_eth,
+            .icon_bnb{background-repeat: no-repeat; background-position: 10px 12px;}
+
+            .icon_btc{background-image: url("./img/icon_wbtc_unselect.png")}
+            .icon_eth{background-image: url("./img/icon_eth_unselect.png")}
+            .icon_bnb{background-image: url("./img/icon_bnb_unselect.png")}
+
+            .active.icon_btc{background-image: url("./img/icon_wbtc_select.png")}
+            .active.icon_eth{background-image: url("./img/icon_eth_select.png")}
+            .active.icon_bnb{background-image: url("./img/icon_bnb_select.png")}
+        }
+
+        .next-tabs-tab-inner {
+            width: 180px;
+            text-align: center;
+            padding: 12px 10px 12px 40px;
+        }
+    }
+
+    .analytics_item{
+        margin-top: 40px;
+
+        .section_title{
+            border-left: 5px solid #50ddbb;
+            padding-left: 8px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .section_asset_box{
+        .section_item{
+            min-height: 140px;
+            height: auto;
+            background-color: rgba(240, 241, 250, 1);
+            border: 1px solid rgba(220, 221, 231, 1);
+
+            .b{
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .t{
+                color: rgba(85, 91, 117, 100);
+                word-break: break-all;
+                padding: 0 10px;
+                text-align: center;
+            }
+
+            .value{
+                font-size: 26px;
+                margin-right: 10px;
+            }
+
+            .usd{
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .section_pool_box{
+        .section_item{
+            align-items: flex-start;
+        }
+
+        .title{
+            line-height: 28px;
+            color: rgba(85, 91, 117, 100);
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        .chart_box{
+            width: 100%;
+            height: 55px;
+            background-color: rgba(233, 235, 246, 1);
+            border: 1px solid rgba(146, 149, 166, 1);
+            position: relative;
+            z-index: 1;
+
+            .chart,
+            .chart_available{
+                height: 53px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .chart{
+                background-color: rgba(85, 91, 117, 1);
+                z-index: 3;
+            }
+
+            .chart_available{
+                background-color: rgba(210, 212, 225, 1);
+                z-index: 2;
+            }
+        }
+
+        .overview{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 30px;
+
+            .item{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .m{
+                text-align: center;
+            }
+
+            .r{
+                text-align: right;
+            }
+
+            .t{
+                line-height: 28px;
+                color: rgba(85, 91, 117, 100);
+                font-size: 22px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .d_ratio,
+            .d_available,
+            .d_total{
+                padding-bottom: 5px;
+                width: auto;
+            }
+
+            .d_ratio{
+                border-bottom: 4px solid #555B75;
+            }
+            .d_available{
+                border-bottom: 4px solid #D2D4E1;
+            }
+            .d_total{
+                border-bottom: 4px solid #E9EBF6;
+            }
+        }
+    }
+
+    .section_pool_snapshot_box{
+        margin-bottom: 40px;
+
+        .next-table{
+            width: 100%;
+        }
+
+        .next-table-cell-wrapper{
+            padding: 12px 10px;
+        }
+
+        .next-loading-fusion-reactor .next-loading-dot{
+            background: #50DDBB 100%;
+        }
+
+        th,
+        td{
+            border: 0;
+            border-bottom: 1px solid rgba(220, 221, 231, 1);
+        }
+
+        th{
+            color: rgba(78, 95, 127, 100);
+            font-size: 14px;
+            background-color: rgba(250, 250, 250, 1);
+            padding: 12px 10px;
+
+            .next-table-cell-wrapper{
+                padding: 0;
+                word-break: break-word;
+                word-wrap:break-word;
+            }
+        }
+
+        td{
+            color: rgba(78, 95, 127, 100);
+            font-size: 14px;
+        }
+
+        tbody tr:hover{
+            background-color: rgba(240, 241, 250, 1);
+        }
+
+        .type{
+            width: 80px;
+        }
+        .duration{
+            width: 90px;
+        }
+        .available{
+            width: 160px;
+        }
+        .revenue{
+            color: rgba(42, 216, 174, 100);
+        }
+        .expiryDate{
+            width: 180px;
+        }
+        .countdown{
+            color: rgba(255, 172, 0, 100);
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.opa_dao_container {
+    .section_item.staking_header{
+        flex-direction: row;
+        justify-content: flex-start;
+        min-height: 70px;
+        padding: 0 45px;
+        font-weight: bolder;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(220, 221, 231, 1);
+
+        .total{
+            margin-right: 15px;
+            margin-left: 45px;
+            font-size: 28px;
+        }
+
+        .total_unit{
+            font-size: 16px;
+        }
+
+        .total_value{
+            margin-left: 45px;
+            font-size: 20px;
+        }
+    }
+
+    .dao_staking_box{
+        border: 1px solid rgba(220, 221, 231, 1);
+
+        .staking_item{
+            padding: 35px 0;
+
+            .sub_btn.next-btn.next-btn-primary {
+                width: 280px !important;
+                height: 50px;
+                font-size: 18px;
+            }
+
+            .sub_btn.next-btn.next-btn-primary.sub_btn_short {
+                width: 280px !important;
+                height: 50px;
+                font-size: 18px;
+            }
+        }
+    }
+}

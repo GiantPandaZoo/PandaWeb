@@ -1,0 +1,21 @@
+.footer_container {
+    background-color: rgba(255, 255, 255, 1);
+    border-top: 1px solid rgba(200, 200, 200, 0.5);
+    height: 90px;
+    color: rgba(179, 193, 200, 100);
+    font-size: 18px;
+
+    .section_container.footer_item_container{
+        .f_copyright{
+            color: rgba(179, 193, 200, 100);
+            font-size: 16px;
+        }
+
+        .f_i_c_r .f_r_i{
+            flex-direction: row;
+            width: auto;
+
+
+        }
+    }
+}

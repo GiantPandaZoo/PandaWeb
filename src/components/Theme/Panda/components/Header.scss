@@ -1,0 +1,73 @@
+.header_container {
+    height: 80px;
+    border-bottom: 0px;
+    background-color: #fff;
+
+    .section_container.header_item_container {
+        margin-top: 20px;
+
+        .logo_link {
+            font-size: 24px;
+            font-weight: bold;
+            padding-left: 20px;
+            color: rgba(80, 221, 187, 100);
+        }
+
+        .navs {
+            margin-left: 50px;
+
+            .nav_menu {
+                position: relative;
+
+                &:hover,
+                &.active {
+                    border-bottom: 0px;
+                    background: #ffffff;
+                    color: #9295a6;
+
+                    .nav_link {
+                        color: #9295a6;
+                    }
+                }
+            }
+            .nav_link {
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                padding: 0 15px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #9295a6;
+                text-decoration: none;
+            }
+            .nav_link.active{
+                border-bottom: 4px solid rgba(80, 221, 187, 1);
+            }
+        }
+
+        .operations {
+            .account_box {
+                .account{
+                    color: #9295a6;
+                    font-size: 18px;
+                }
+            }
+
+            .sub_btn.next-btn.next-btn-primary {
+                width: 200px;
+                padding: 0;
+                background-color: rgba(0, 216, 178, 0);
+                border: 0;
+                color: rgba(0, 216, 178, 100);
+                font-size: 20px;
+            }
+            .sub_btn.next-btn.next-btn-primary:hover{
+                background-color: rgba(0, 216, 178, 0);
+                border: 0;
+            }
+        }
+    }
+}
+
+
+

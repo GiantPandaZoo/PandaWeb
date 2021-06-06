@@ -1,0 +1,156 @@
+{
+  "name": "@ozo/react-jazz",
+  "version": "1.1.5",
+  "homepage": "",
+  "author": {
+    "name": "jazz.KK",
+    "email": "inier@qq.com"
+  },
+  "description": "React bootstrap",
+  "dependencies": {
+    "@alifd/next": "^1.20.12",
+    "@alifd/theme-chm": "^0.9.1",
+    "@ozo/lazy-loader": "^1.0.4",
+    "bignumber.js": "^9.0.1",
+    "bizcharts": "^4.0.6",
+    "classnames": "^2.2.6",
+    "current-device": "^0.10.2",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash-es": "^4.17.15",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.1.8",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.33",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "rc-collapse": "^1.11.8",
+    "react": "^16.13.1",
+    "react-binance-wallet": "^1.0.4",
+    "react-dom": "^16.13.1",
+    "react-intl-universal": "^2.4.2",
+    "react-router-dom": "^5.1.2",
+    "react-transition-group": "^4.3.0",
+    "shortid": "^2.2.15",
+    "web3": "^1.3.0"
+  },
+  "devDependencies": {
+    "@alifd/next-theme-loader": "^1.3.1",
+    "@alifd/next-theme-webpack-plugin": "^1.0.1",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@ice/spec": "^1.0.1",
+    "@ozo/mixins-sass": "^1.1.7",
+    "assert": "^2.0.0",
+    "babel-plugin-import": "^1.13.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "compression": "^1.7.4",
+    "conventional-changelog": "^3.1.18",
+    "core-js": "^3.6.4",
+    "css-mqpacker": "^7.0.0",
+    "customize-cra": "^0.9.1",
+    "drop-console-webpack-plugin": "^4.0.2",
+    "env-cmd": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^3.13.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "express-useragent": "^1.0.13",
+    "hash-sum": "^2.0.0",
+    "http-proxy-middleware": "^1.0.3",
+    "husky": "^4.2.3",
+    "lint-md": "^0.2.0",
+    "lint-md-cli": "^0.1.2",
+    "lint-staged": "^10.0.9",
+    "lodash-webpack-plugin": "^0.11.5",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.1.0",
+    "postcss-px2rem": "^0.3.0",
+    "prettier": "^2.0.2",
+    "react-app-rewired": "^2.1.5",
+    "react-scripts": "^3.4.1",
+    "source-map-explorer": "^2.4.1",
+    "speed-measure-webpack-plugin": "^1.3.3",
+    "stylelint": "^13.2.1",
+    "stylelint-webpack-plugin": "^1.2.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "vconsole": "^3.3.4",
+    "vconsole-webpack-plugin": "^1.5.1",
+    "webpack-build-notifier": "^2.0.0",
+    "webpack-bundle-analyzer": "3.6.1",
+    "webpack-plugin-import": "^0.2.6",
+    "webpack-simple-progress-plugin": "^0.0.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "start": "set PORT=9000 && env-cmd -e development react-app-rewired start",
+    "build": "env-cmd -e production react-app-rewired build",
+    "debug": "env-cmd -e production,debug react-app-rewired build",
+    "test": "env-cmd -e test react-app-rewired test",
+    "eject": "react-scripts eject",
+    "envcmd:start": "env-cmd -e development node .env-cmd.test.js",
+    "envcmd:build": "env-cmd -e production node .env-cmd.test.js",
+    "envcmd:debug": "env-cmd -e production,debug node .env-cmd.test.js",
+    "envcmdTest": "npm-run-all envcmd:*",
+    "lint": "npm run eslint && npm run stylelint",
+    "lint:fix": "npm run eslint:fix && npm run stylelint:fix",
+    "eslint": "eslint src/**/*.{js,jsx,ts,tsx} --format table",
+    "eslint:fix": "eslint src/**/*.{js,jsx,ts,tsx} --format table --fix",
+    "stylelint": "stylelint src/**/*.{css,less,sass,scss} --cache",
+    "stylelint:fix": "stylelint src/**/*.{css,less,sass,scss} --cache --fix",
+    "prettier": "prettier --write src/**/*.{js,jsx,ts,tsx,css,sass,scss,less,json,md,mdx}",
+    "mdlint": "lint-md **/*.{md,markdown}",
+    "mdlint:fix": "lint-md **/*.{md,markdown} --fix",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "autoFormat": "onchange src/**/*.js src/**/*.jsx src/**/*.scss -- prettier --write {{changed}}",
+    "analyze": "react-app-rewired build && source-map-explorer build/static/js/main.*",
+    "screenshot": "screenshot -l",
+    "prepublishOnly": "npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "keywords": [
+    "ice-scaffold"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "buildConfig": {
+    "theme": {
+      "alifd": "@alifd/theme-chm"
+    }
+  },
+  "scaffoldConfig": {
+    "builder": "react-scripts",
+    "name": "react-admin",
+    "title": "react-admin",
+    "categories": [
+      "basic template"
+    ],
+    "screenshot": "https://unpkg.com/@ozo/react-jazz@latest/screenshot.png"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inier/react-jazz.git"
+  },
+  "title": "Option Panda",
+  "license": "MIT"
+}

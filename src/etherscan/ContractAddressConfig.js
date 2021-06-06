@@ -1,0 +1,49 @@
+const ContractAddressConfig = {
+    net56:{
+        opa:{
+            token:"0xA2F89a3be1bAda5Eb9D58D23EDc2E2FE0F82F4b0",
+            staking:{
+                DAO:{
+                    stake:"0xB40772332382cBaE2EAb0aeAb360f72384A11C0e",
+                    asset:"0xA2F89a3be1bAda5Eb9D58D23EDc2E2FE0F82F4b0"
+                },
+                'OPA-USDT@DoDo':{
+                    stake:"0x0034C85583cA1D40C94690781C07f1060A1caa91",
+                    asset:"0xc2c8804451737ed63db01c092dd7699e0f72f1a4"
+                },
+                'OPA-BNB@DoDo':{
+                    stake:"0x0034C85583cA1D40C94690781C07f1060A1caa91",
+                    asset:"0xc2c8804451737ed63db01c092dd7699e0f72f1a4"
+                },
+                'OPA-USDT@Pancake':{
+                    stake:"0x0F48a2DaCb2EB6C227020c4D6441d50363007f13",
+                    asset:"0x82cD9eB4cDc1900f52E8e66618Bba0c01DC7a29F"
+                },
+                'OPA-BNB@Pancake':{
+                    stake:"0x0034C85583cA1D40C94690781C07f1060A1caa91",
+                    asset:"0xc2c8804451737ed63db01c092dd7699e0f72f1a4"
+                },
+                'OPA-BTCB@Pancake':{
+                    stake:"0x0034C85583cA1D40C94690781C07f1060A1caa91",
+                    asset:"0xc2c8804451737ed63db01c092dd7699e0f72f1a4"
+                },
+            }
+        },
+        pool:{
+            BNB:{
+                call:"0xca2B1CADBE906f6660A342b019b0BB822Cadf1BE",
+                put:"0x2bdB323eCA3aD20d69488103a54E128202C3ECF1",
+            },
+            BTCB:{
+                call:"0xEEb3c80dBA0a163Cf31383caABA520A4F02b4332",
+                put:"0x59e4c63CE21E8a2E320A12B6EB0729A6be407e57",
+            },
+            ETH:{
+                call:"0x078f6761c3317d0D0766d515dF507e7011FF8F18",
+                put:"0xaF12A8cB500C2908bD20F70cF3E86515eE1b8ac0",
+            },
+        },
+    },
+};
+
+export default ContractAddressConfig;

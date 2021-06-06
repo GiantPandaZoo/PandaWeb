@@ -1,0 +1,171 @@
+.opa_p_container {
+    .opa_total{
+        color: rgba(78, 95, 127, 100);
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .total_value{
+        margin-top: 55px;
+        font-weight: bolder;
+
+        .value{
+            font-size: 32px;
+            margin-right: 10px;
+        }
+
+        .unit{
+            font-size: 18px;
+        }
+    }
+
+    .rewards_table{
+        margin-top: 30px;
+
+        .sub_btn.next-btn.next-btn-primary.sub_btn_short{
+            width: 240px !important;
+            height: 50px;
+            font-size: 18px;
+        }
+
+        .asset_cell{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 260px;
+
+            .asset{
+                font-size: 24px;
+                font-weight: normal;
+            }
+        }
+
+        .unit{
+            font-size: 14px;
+            margin-left: 15px;
+        }
+    }
+
+    .next-table{
+        width: 100%;
+
+        td .next-table-cell-wrapper{
+            padding: 0px 20px;
+        }
+    }
+
+    .next-loading-fusion-reactor .next-loading-dot{
+        background: #50DDBB 100%;
+    }
+
+    th,
+    td{
+        border: 0;
+        border-bottom: 1px solid rgba(220, 221, 231, 1);
+    }
+
+    th{
+        color: rgba(78, 95, 127, 100);
+        font-size: 16px;
+        background-color: rgba(250, 250, 250, 1);
+        padding: 12px 20px;
+
+        .next-table-cell-wrapper{
+            padding: 0;
+            word-break: break-word;
+            word-wrap:break-word;
+        }
+    }
+
+    td{
+        color: rgba(85, 91, 117, 100);
+        font-size: 22px;
+        font-weight: bolder;
+    }
+
+    tbody tr:hover{
+        background-color: rgba(240, 241, 250, 1);
+    }
+}
+
+.opa_pop_windows{
+    .pool_rewards_item_box{
+        .next-radio-button{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .next-radio-button > label{
+            width: 100%;
+            height: 90px;
+            border: 1px solid rgba(220, 221, 231, 1);
+            border-radius: 0;
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bolder;
+            margin-bottom: 20px;
+
+            .pool{
+                margin-bottom: 15px;
+            }
+
+            .rewards_box{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .rewards{
+                font-size: 24px;
+                margin-right: 15px;
+            }
+        }
+
+        .next-radio-button > label.checked{
+            background-color: rgba(80, 221, 187, 1);
+            border-color: transparent;
+
+            .next-radio-label{
+                color: #ffffff;
+            }
+        }
+
+        .next-radio-button > label .next-radio-label{
+            color: #555B75;
+            line-height: 1.28571;
+            font-size: 16px;
+        }
+    }
+
+    .pool_rewards_item{
+        width: 100%;
+        height: 90px;
+        border: 1px solid rgba(220, 221, 231, 1);
+        padding: 15px 20px;
+        color: #555B75;
+        font-size: 16px;
+        font-weight: bolder;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        .pool{
+            margin-bottom: 15px;
+        }
+
+        .rewards{
+            font-size: 24px;
+            margin-right: 15px;
+        }
+    }
+
+    .pool_rewards_item.active{
+        background-color: rgba(80, 221, 187, 1);
+        border-color: transparent;
+        color: #ffffff;
+    }
+
+    .sub_btn_box.sub_box_pool{
+        margin-top: 35px;
+    }
+}

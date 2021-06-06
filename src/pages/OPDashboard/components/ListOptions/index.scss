@@ -1,0 +1,17 @@
+.dashboard_container {
+    margin: 20px 0;
+
+    .section_dashboard_box{
+        margin-bottom: 40px;
+
+        .sub_btn.next-btn.next-btn-primary {
+            color: #fff;
+            width: 90px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: #50ddbb;
+            border-color: #50ddbb;
+            font-weight: bold;
+        }
+    }
+}

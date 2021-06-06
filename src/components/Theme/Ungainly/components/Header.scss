@@ -1,0 +1,45 @@
+.header_container {
+    height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #222;
+
+    .section_container.header_item_container {
+        .logo_link {
+            font-size: 24px;
+            font-weight: bold;
+            padding-left: 20px;
+            color: #fff;
+        }
+
+        .navs {
+            margin-left: 50px;
+
+            .nav_menu {
+                position: relative;
+
+                &:hover,
+                &.active {
+                    border-bottom: 3px solid #cc7a6f;
+                    background: #333;
+                    color: #fafafa;
+
+                    .nav_link {
+                        color: #fafafa;
+                    }
+                }
+            }
+            .nav_link {
+                display: block;
+                height: 60px;
+                line-height: 60px;
+                padding: 0 20px;
+                font-size: 15px;
+                color: #aaa;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+

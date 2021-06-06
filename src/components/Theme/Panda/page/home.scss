@@ -1,0 +1,199 @@
+.panda{
+    .b_container,
+    .s_b_container{
+        background-color: #ffffff;
+        margin-top: 20px;
+
+        .l {
+            color: rgba(146, 149, 166, 100);
+            max-width: 667px;
+            align-items: flex-start;
+
+            .title{
+                color: rgba(85, 91, 117, 100);
+                line-height: 60px;
+                font-size: 50px;
+                font-weight: normal;
+            }
+
+            .content{
+                line-height: 40px;
+                font-size: 22px;
+            }
+
+            .btn {
+                height: 60px;
+            }
+        }
+
+        .r {
+            .content {
+                max-width: 590px;
+            }
+        }
+    }
+
+    .b_container{
+        margin-top: 40px;
+    }
+
+    .u_container {
+        .u_section_item {
+            align-items: flex-start;
+
+            .buyer,
+            .pooler{
+                align-items: flex-end;
+            }
+        }
+        .u_section_item.uc_content {
+            .buyer,
+            .pooler{
+                align-items: flex-start;
+                width: 333px;
+
+                .title {
+                    color: rgba(85, 91, 117, 100);
+                    text-align: left;
+                }
+
+                .des {
+                    text-align: left;
+                    line-height: 32px;
+                    font-size: 16px;
+                }
+            }
+
+            .buyer_icon,
+            .poller_icon {
+                width: 200px;
+                height: 120px;
+            }
+        }
+
+    }
+
+    .trading_container {
+        .coin_switch {
+            .next-tabs-tab-inner {
+                font-size: 24px;
+                line-height: 42px;
+                font-weight: bold;
+            }
+        }
+
+        .option_form {
+            .section_item {
+                .f_tips {
+                    font-size: 16px;
+                    white-space:nowrap;
+
+                    .bolder{
+                        color: rgba(255, 172, 0, 100);
+                        font-size: 20px;
+                    }
+                }
+
+                .f_input {
+                    width: 200px;
+
+                    .next-input,
+                    input {
+                        height: 50px;
+                        font-weight: bolder;
+                        font-size: 18px;
+                        color: rgba(80, 221, 187, 100);
+                    }
+
+                    .next-after {
+                        padding-right: 5px;
+                    }
+
+                    .next-select-trigger-search,
+                    .next-input-control .next-icon{
+                        color: rgba(80, 221, 187, 100);
+                        font-weight: bolder;
+                    }
+                }
+
+                .next-select {
+                    .next-input{
+                        height: 52px;
+
+                        .next-select-trigger-search span{
+                            color: rgba(80, 221, 187, 100);
+                        }
+                    }
+                }
+
+                .f_input_long{
+                    width: 229px;
+                }
+                .f_input_longer{
+                    width: 257px;
+                }
+
+                .next-input{
+                    font-weight: bolder;
+                    background-color: rgba(0, 216, 178, 0);
+                    border: 1px solid rgba(80, 221, 187, 1);
+                    border-radius: 0;
+                }
+
+                .next-input.next-disabled{
+                    background-color: rgba(179, 193, 200, 0.2);
+                    border: 1px solid rgba(208, 218, 223, 1);
+                    color: rgba(85, 91, 117, 100);
+
+                    input {
+                        color: rgba(85, 91, 117, 100);
+                        font-weight: bolder;
+                    }
+                }
+
+                .next-input.next-medium .next-input-text-field{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .option_form .next-radio-button-large > label,
+        .option_profit .next-radio-button-large > label{
+            width: 115px;
+            height: 52px;
+
+            .next-radio-label{
+                font-size: 18px;
+                line-height: 50px;
+                text-align: center;
+            }
+        }
+    }
+
+    .qa_container {
+        .qa_section_item {
+            padding: 20px 0px;
+            align-items: start;
+            color: rgba(146, 149, 166, 100);
+            font-size: 16px;
+
+            .title {
+                color: rgba(85, 91, 117, 100);
+                font-size: 20px;
+                line-height: 30px;
+                padding-left: 10px;
+            }
+
+            .section_content{
+                font-size: 16px;
+                padding-left: 15px;
+
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+}

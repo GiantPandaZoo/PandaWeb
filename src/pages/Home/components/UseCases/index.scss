@@ -1,0 +1,44 @@
+.u_container {
+    .u_section_item {
+        margin: 30px 0;
+
+        .buyer,
+        .pooler {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            .u_s_i_item {
+                display: flex;
+                margin: 10px 0;
+            }
+
+            .title {
+                font-size: 28px;
+                font-weight: bolder;
+                line-height: 36px;
+            }
+
+            .des {
+                text-align: center;
+            }
+        }
+
+        .buyer_icon,
+        .poller_icon {
+            width: 160px;
+            height: 189px;
+        }
+
+        .buyer_icon {
+            background-image: url("./img/buyer.png");
+        }
+
+        .poller_icon {
+            background-image: url("./img/pooler.png");
+        }
+    }
+
+}

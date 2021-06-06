@@ -1,0 +1,62 @@
+.opa_section_title{
+    width: 100%;
+    font-size: 28px;
+    font-weight: bolder;
+    border-left: 5px solid #50ddbb;
+    padding-left: 8px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: rgba(78, 95, 127, 100);
+}
+
+.opa_pop_windows{
+    padding: 30px 100px !important;
+    height: auto !important;
+
+    .coin_item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 35px;
+
+        .asset{
+            font-size: 30px;
+        }
+    }
+}
+
+.dao_staking_box{
+    width: 100%;
+    height: auto;
+    color: rgba(78, 95, 127, 100);
+
+    .staking_item{
+        padding: 0 45px;
+        font-size: 20px;
+
+        .value{
+            font-weight: bolder;
+            font-size: 26px;
+        }
+
+        .unit{
+            margin-left: 15px;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+
+        .item_name{
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        .sub_btn.next-btn.next-btn-primary {
+            background-image: none !important;
+        }
+
+        .sub_btn.next-btn.next-btn-primary.sub_btn_short {
+            margin: 0 !important;
+        }
+    }
+}

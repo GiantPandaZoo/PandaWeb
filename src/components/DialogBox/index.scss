@@ -1,0 +1,55 @@
+.next-dialog.next-closeable{
+    width: 640px;
+    height: 220px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+    .next-dialog-close{
+        border: 1px solid rgb(87,93,119);
+        border-radius: 12px;
+        width: 24px;
+        height: 24px;
+        top: 15px;
+        right: 15px;
+        color: #575d77;
+
+        .next-dialog-close-icon.next-icon{
+            margin-top: -6px;
+        }
+    }
+
+    .next-dialog-body{
+        text-align: center;
+    }
+
+    .content_title{
+        color: rgba(85, 91, 117, 100);
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: bold;
+
+        .title_icon{
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: -11px;
+            width: 44px;
+            height: 44px;
+        }
+        .title_icon_success{
+            background-image: url("./img/icon_pop_success.png");
+        }
+
+        .title_icon_failed{
+            background-image: url("./img/icon_pop_failed.png");
+        }
+    }
+
+    .d_content{
+        color: rgba(146, 149, 166, 100);
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 30px;
+    }
+}

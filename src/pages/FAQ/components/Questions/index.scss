@@ -1,0 +1,103 @@
+.p_q_t_container {
+    .section_container_title{
+        border-bottom: 1px solid rgba(220, 221, 231, 1);
+
+        .section_item_l{
+            margin-left: 20px;
+        }
+        .section_item_r{
+            margin-right: 20px;
+        }
+    }
+
+    .section_container .section_item{
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .qa_page_title{
+        color: rgba(78, 95, 127, 100);
+        font-size: 28px;
+        line-height: 42px;
+        font-weight: bolder;
+        margin: 30px 0;
+    }
+
+    .qa_title_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        a{
+            text-decoration: none;
+        }
+
+        .more{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+
+            .more_link{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                width: 300px;
+                height: 60px;
+                border-radius: 30px;
+                background-color: #50ddbb;
+                background-image: url("./img/icon_btn_arrow.png");
+                background-position: 247px 20px;
+                background-repeat: no-repeat;
+                border-color: #50ddbb;
+                font-size: 22px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .qa_question{
+        width: 100%;
+        min-height: 60px;
+        border: 1px solid rgba(220, 221, 231, 1);
+        color: rgba(85, 91, 117, 100);
+        font-size: 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        position: relative;
+
+        .index{
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            margin: 17px 20px;
+            background-color: rgba(80, 221, 187, 1);
+            border-radius: 13px;
+            color: rgba(255, 255, 255, 100);
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .title{
+            max-width: 400px;
+            margin: 18px 0;
+            line-height: 25px;
+        }
+
+        .arrow{
+            width: 24px;
+            height: 20px;
+            background-image: url("./img/icon_arrow.png");
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+    }
+    .qa_question:hover{
+        background-color: rgba(240, 241, 250, 1);
+    }
+}

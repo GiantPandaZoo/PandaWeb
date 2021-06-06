@@ -1,0 +1,17 @@
+.opa_connect_wallet_pop_windows{
+    .item.connect_tips{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sub_btn_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .next-btn.next-btn-primary.confirm{
+            width: auto;
+            padding: 0 25px;
+        }
+    }
+}

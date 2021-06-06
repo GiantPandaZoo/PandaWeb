@@ -1,0 +1,28 @@
+.opa_stats_container{
+    margin-top: 30px;
+    background-color: rgba(80, 221, 187, 1);
+    border: 1px solid rgba(220, 221, 231, 1);
+
+    .opa_stats_section_container{
+        min-height: 140px;
+    }
+
+    .stats_item{
+        color: #FFF;
+        font-size: 18px;
+
+        .s_value{
+            margin-right: 15px;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .s_unit{
+            font-weight: bolder;
+        }
+
+        .item_des{
+            margin-top: 17px;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.wallet_pop_windows{
+    width: 500px !important;
+    height: auto !important;
+    padding: 10px !important;
+}
+.pop_wallet_box {
+    display: flex;
+    flex-direction: row;
+
+    .wallet_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 170px;
+        border-bottom: 1px solid rgba(195, 195, 195, 0.14);
+        cursor: pointer;
+
+        .wallet_icon{
+            width: 45px;
+            height: 45px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .icon_metamask{
+            background-image: url("./img/metamask.png");
+        }
+
+        .icon_bsc{
+            background-image: url("./img/icon_bsc.svg");
+        }
+
+        .wallet_name{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bolder;
+            font-size: 24px;
+        }
+
+        .des{
+            color: rgb(169, 169, 188);
+            font-size: 18px;
+        }
+    }
+
+    .wallet_item:last-child{
+        border-bottom: 0px;
+    }
+}
